@@ -2,10 +2,7 @@
 ## Activating the virtual environment
 From the root directory activate the virtual environment as is appropriate for your OS: 
 ### POSIX
-* bash/zsh - `source venv/bin/activate`
-* fish - `source venv/bin/activate.fish`
-* csh/tcsh - `source venv/bin/activate.csh`
-* PowerShell Core - `venv/bin/Activate.ps1`
+* bash/zsh - `source venv/Scripts/activate`
 ### Windows
 * cmd.exe - `venv\Scripts\activate.bat`
 * PowerShell - `venv\Scripts\Activate.ps1`
