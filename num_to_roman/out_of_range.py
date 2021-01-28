@@ -1,2 +1,0 @@
-class OutOfRangeException(Exception):
-    pass

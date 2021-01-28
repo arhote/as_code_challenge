@@ -1,4 +1,4 @@
-from num_to_roman.out_of_range import OutOfRangeException
+from num_to_roman.exceptions import OutOfRangeException
 
 
 class RomanNumeral:

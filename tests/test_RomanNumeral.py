@@ -1,6 +1,6 @@
 import unittest
 
-from num_to_roman.out_of_range import OutOfRangeException
+from num_to_roman.exceptions import OutOfRangeException
 from num_to_roman.roman_numeral import RomanNumeral
 
 
