@@ -1,3 +1,6 @@
+from num_to_roman.out_of_range import OutOfRangeException
+
+
 class RomanNumeral:
     ONE = "I"
     FOUR = "IV"
@@ -14,11 +17,17 @@ class RomanNumeral:
     ONE_THOUSAND = "M"
 
     def __init__(self, number):
-        self.numeral = RomanNumeral.number_to_numeral(number);
+        try:
+            self.numeral = RomanNumeral.number_to_numeral(number)
 
     def __str__(self):
         return self.numeral
 
     @staticmethod
     def num_to_roman(number):
-        return ""
+        if(number > 1 or number < 3999):
+            msg = "The number you tried to enter is outside of the allowed values, please try again."
+            raise OutOfRangeException(msg)
+
+
+        return
