@@ -11,6 +11,8 @@ while True:
             break
         except ValueError:
             print("That was not a valid number. Please try again.")
+        except KeyboardInterrupt:
+            quit()
 
     try:
         print(RomanNumeral(number))
