@@ -1,4 +1,6 @@
 import unittest
+
+from num_to_roman.out_of_range import OutOfRangeException
 from num_to_roman.roman_numeral import RomanNumeral
 
 
@@ -49,7 +51,13 @@ class RomanNumeralTestCase(unittest.TestCase):
         self.assertEqual(RomanNumeral.num_to_roman(949), "CMXLIX")
         self.assertEqual(RomanNumeral.num_to_roman(994), "CMXCIV")
         self.assertEqual(RomanNumeral.num_to_roman(999), "CMXCIX")
-
+        """
+        Test Bad Values
+        """
+        with self.assertRaises(OutOfRangeException):
+            result = RomanNumeral.num_to_roman(0)
+        with self.assertRaises(OutOfRangeException):
+            result = RomanNumeral.num_to_roman(4000)
 
 
 if __name__ == '__main__':
