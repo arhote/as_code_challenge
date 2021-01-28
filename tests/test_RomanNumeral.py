@@ -58,6 +58,8 @@ class RomanNumeralTestCase(unittest.TestCase):
             result = RomanNumeral.num_to_roman(0)
         with self.assertRaises(OutOfRangeException):
             result = RomanNumeral.num_to_roman(4000)
+        with self.assertRaises(OutOfRangeException):
+            result = RomanNumeral.num_to_roman(-200)
 
 
 if __name__ == '__main__':
